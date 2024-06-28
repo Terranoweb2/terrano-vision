@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - TerranoVision</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #000;
+            color: #333;
+        }
+        .background {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 50px;
+            z-index: 2;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .signup-container {
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 4px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 660px;
+            padding: 60px 68px 40px;
+            width: 450px;
+            z-index: 2;
+        }
+        .signup-form h1 {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 28px;
+        }
+        .signup-form .form-group {
+            margin-bottom: 16px;
+        }
+        .signup-form input {
+            background-color: #333;
+            border: 0;
+            border-radius: 4px;
+            color: #fff;
+            height: 50px;
+            padding: 16px 20px;
+            width: 100%;
+        }
+        .signup-form button {
+            background-color: #FFA500;
+            border: 0;
+            border-radius: 4px;
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 24px 0 12px;
+            padding: 16px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .signup-form button:hover {
+            background-color: #FFB52E;
+        }
+        .login {
+            color: #737373;
+            font-size: 16px;
+            margin-top: 16px;
+        }
+        .login a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .login a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="TerranoVision.png" alt="TerranoVision Logo">
+                </a>
+            </div>
+        </header>
+        <main class="signup-container">
+            <form class="signup-form">
+                <h1>Inscrivez-vous</h1>
+                <div class="form-group">
+                    <input type="text" placeholder="Nom">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Prénom">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Adresse e-mail">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Mot de passe">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Confirmez le mot de passe">
+                </div>
+                <button type="submit">S'inscrire</button>
+            </form>
+            <div class="login">
+                Déjà membre ? <a href="login.html">Connectez-vous</a>.
+            </div>
+        </main>
+    </div>
+</body>
+</html>

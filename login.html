@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - TerranoVision</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #000;
+            color: #333;
+        }
+        .background {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 50px;
+            z-index: 2;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 4px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 660px;
+            padding: 60px 68px 40px;
+            width: 450px;
+            z-index: 2;
+        }
+        .login-form h1 {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 28px;
+        }
+        .login-form .form-group {
+            margin-bottom: 16px;
+        }
+        .login-form input {
+            background-color: #333;
+            border: 0;
+            border-radius: 4px;
+            color: #fff;
+            height: 50px;
+            padding: 16px 20px;
+            width: 100%;
+        }
+        .login-form button {
+            background-color: #FFA500;
+            border: 0;
+            border-radius: 4px;
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 24px 0 12px;
+            padding: 16px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #FFB52E;
+        }
+        .help {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+        }
+        .help a {
+            color: #b3b3b3;
+            font-size: 13px;
+            text-decoration: none;
+        }
+        .help a:hover {
+            text-decoration: underline;
+        }
+        .signup {
+            color: #737373;
+            font-size: 16px;
+            margin-top: 16px;
+        }
+        .signup a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .signup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="TerranoVision.png" alt="TerranoVision Logo">
+                </a>
+            </div>
+        </header>
+        <main class="login-container">
+            <form class="login-form">
+                <h1>S'identifier</h1>
+                <div class="form-group">
+                    <input type="text" placeholder="E-mail ou numéro de téléphone">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Mot de passe">
+                </div>
+                <button type="submit">S'identifier</button>
+                <div class="help">
+                    <label>
+                        <input type="checkbox"> Se souvenir de moi
+                    </label>
+                    <a href="#">Besoin d'aide ?</a>
+                </div>
+            </form>
+            <div class="signup">
+                Première visite sur TerranoVision ? <a href="signup.html">Inscrivez-vous</a>.
+            </div>
+        </main>
+    </div>
+</body>
+</html>

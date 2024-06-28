@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerranoVision</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #fff;
+            height: 100%;
+        }
+        .background {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+        .background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        header {
+            position: relative;
+            z-index: 2;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .login-button, .signup-button {
+            padding: 7px 17px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .login-button {
+            background-color: #FFA500;
+            color: #000;
+        }
+        .login-button:hover {
+            background-color: #FFB52E;
+        }
+        .signup-button {
+            background-color: #87CEEB;
+            color: #000;
+        }
+        .signup-button:hover {
+            background-color: #5CACEE;
+        }
+        .main-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding-top: 75px;
+        }
+        h1 {
+            font-size: 3.125rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.625rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        .signup-form {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .signup-form h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            display: flex;
+            justify-content: center;
+        }
+        .signup-form input {
+            height: 60px;
+            width: 450px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #8c8c8c;
+        }
+        .signup-form button {
+            height: 60px;
+            background-color: #87CEEB;
+            color: #000;
+            font-size: 1.625rem;
+            border: none;
+            padding: 0 26px;
+            cursor: pointer;
+        }
+        .signup-form button:hover {
+            background-color: #5CACEE;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="TerranoVision.png" alt="TerranoVision Logo">
+                </a>
+            </div>
+            <div class="nav-buttons">
+                <a href="login.html" class="login-button">S'identifier</a>
+                <a href="signup.html" class="signup-button">S'inscrire</a>
+            </div>
+        </header>
+        <main class="main-content">
+            <h1>Films, séries TV et bien plus en illimité.</h1>
+            <h2>Où que vous soyez. Annulez à tout moment.</h2>
+            <div class="signup-form">
+                <h3>Prêt à regarder ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</h3>
+                <div class="form-group">
+                    <input type="email" placeholder="Adresse e-mail">
+                    <button type="submit">Commencer ></button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
